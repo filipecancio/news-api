@@ -10,7 +10,11 @@ fun Application.configureRouting() {
 
     routing {
         get("/") {
-            call.respondText("Hello World!")
+            call.respond(endpointsList)
         }
     }
 }
+
+val endpointsList = listOf(
+    mapOf("category" to "http://localhost:8080/category")
+)
