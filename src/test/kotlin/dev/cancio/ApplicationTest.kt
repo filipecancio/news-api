@@ -9,13 +9,12 @@ import dev.cancio.routes.homeRouting
 
 class ApplicationTest {
     @Test
-    fun testRoot() = testApplication {
+    fun `WHEN get localhost THEN the status is alive`() = testApplication {
         application {
             homeRouting()
         }
         client.get("/").apply {
             assertEquals(HttpStatusCode.OK, status)
-            assertEquals("Hello World!", bodyAsText())
         }
     }
 }
