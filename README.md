@@ -41,7 +41,6 @@ Agora basta abrir o postman e criar os endpoints de sua preferência. Vou sugeri
         "title": "Creating HTTP APIs",
         "urlName": "https://ktor.io/docs/creating-http-apis.html#register-customer-routes"
     }
-}
   ```
 - UpdateNews: Atualiza uma nova notícia
   - Endpoint: `http://localhost:8080/sistemas_operacionais/1` ou `http://localhost:8080/jogatina/1`
@@ -53,5 +52,6 @@ Agora basta abrir o postman e criar os endpoints de sua preferência. Vou sugeri
         "title": "Creating HTTP APIs",
         "urlName": "https://ktor.io/docs/creating-http-apis.html#register-customer-routes"
     }
+  ```
 - DeleteNews: Apaga uma notícia
   - Endpoint: `http://localhost:8080/sistemas_operacionais/1` ou `http://localhost:8080/jogatina/1`
