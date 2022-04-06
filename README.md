@@ -27,8 +27,12 @@ Agora basta abrir o postman e criar os endpoints de sua preferência. Vou sugeri
 
 - GetCategorys: coleta todas as categorias
   - Endpoint: `http://localhost:8080/category`
+
+
 - GetNews: coleta uma unica notícia mediante ao id e à categoria
   - Endpoint: `http://localhost:8080/sistemas_operacionais/1` ou `http://localhost:8080/jogatina/1`
+
+
 - CreateNews: Cria uma nova notícia
   - Endpoint: `http://localhost:8080/`
   - Corpo da requisição:
@@ -42,6 +46,9 @@ Agora basta abrir o postman e criar os endpoints de sua preferência. Vou sugeri
         "urlName": "https://ktor.io/docs/creating-http-apis.html#register-customer-routes"
     }
   ```
+  > Note que o campo `category` está em uppercase. As duas alternativas de valores são: `SISTEMAS_OPERACIONAIS` e `JOGATINA`
+  
+  
 - UpdateNews: Atualiza uma nova notícia
   - Endpoint: `http://localhost:8080/sistemas_operacionais/1` ou `http://localhost:8080/jogatina/1`
   - Corpo da requisição:
@@ -53,5 +60,7 @@ Agora basta abrir o postman e criar os endpoints de sua preferência. Vou sugeri
         "urlName": "https://ktor.io/docs/creating-http-apis.html#register-customer-routes"
     }
   ```
+  
+  
 - DeleteNews: Apaga uma notícia
   - Endpoint: `http://localhost:8080/sistemas_operacionais/1` ou `http://localhost:8080/jogatina/1`
