@@ -4,8 +4,8 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class News(
-    val id: String,
-    val date: String,
-    val title: String,
-    val urlName: String,
+    var id: String,
+    var date: String,
+    var title: String,
+    var urlName: String,
 )

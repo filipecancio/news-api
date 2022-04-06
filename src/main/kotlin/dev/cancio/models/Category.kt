@@ -3,13 +3,13 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Category(
-    val name: String,
-    val content: List<News>
+    val name: CategotyType,
+    val content: MutableList<News>
 )
 
 val newsStorage =  mutableListOf<Category>(
     Category(
-        name = "Jogatina",
+        name = CategotyType.JOGATINA,
         content = mutableListOf<News>(
             News(
                 id = "1",
@@ -32,7 +32,7 @@ val newsStorage =  mutableListOf<Category>(
         )
     ),
     Category(
-        name = "sistemas_operacionais",
+        name = CategotyType.SISTEMAS_OPERACIONAIS,
         content = mutableListOf<News>(
             News(
                 id = "1",
@@ -55,3 +55,8 @@ val newsStorage =  mutableListOf<Category>(
         )
     ),
 )
+
+enum class CategotyType(val type:String){
+    JOGATINA("jogatina"),
+    SISTEMAS_OPERACIONAIS("sistemas_operacionais")
+}
