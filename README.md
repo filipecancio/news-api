@@ -1,12 +1,7 @@
 # News API
 Api de Atividade de DDI (Desenvolvimento Distribuido na internet)
 
-## Fases
-
-#### Fase01 - Uma api simples
-![Frame 2](https://user-images.githubusercontent.com/13178261/161849199-b8a3a74e-29fd-46e5-b33e-3264dd35b0d1.png)
-
-#### Como executar o projeto
+## Como executar o projeto
 
 Para executar o projeto você vai precisar dos seguintes pre-requisitos:
 - GIT
@@ -64,3 +59,8 @@ Agora basta abrir o postman e criar os endpoints de sua preferência. Vou sugeri
   
 - DeleteNews: Apaga uma notícia
   - Endpoint: `http://localhost:8080/sistemas_operacionais/1` ou `http://localhost:8080/jogatina/1`
+
+## Fases
+
+#### Fase01 - Uma api simples
+![Frame 2](https://user-images.githubusercontent.com/13178261/161849199-b8a3a74e-29fd-46e5-b33e-3264dd35b0d1.png)
